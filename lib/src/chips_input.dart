@@ -383,6 +383,15 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   }
 
   @override
+  void didChangeInputControl(
+      TextInputControl? oldControl, TextInputControl? newControl) {}
+
+  @override
+  void insertContent(KeyboardInsertedContent content) {
+
+  }
+
+  @override
   void performPrivateCommand(String action, Map<String, dynamic> data) {
     //TODO
   }
