@@ -386,10 +386,29 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   void didChangeInputControl(
       TextInputControl? oldControl, TextInputControl? newControl) {}
 
-  @override
-  void insertContent(KeyboardInsertedContent content) {
+  void updateEditingValue(TextEditingValue value);
 
-  }
+  void performAction(TextInputAction action);
+
+  void insertContent(KeyboardInsertedContent content) {}
+
+  void performPrivateCommand(String action, Map<String, dynamic> data);
+
+  void updateFloatingCursor(RawFloatingCursorPoint point);
+
+  void showAutocorrectionPromptRect(int start, int end);
+
+  void connectionClosed();
+
+  void didChangeInputControl(TextInputControl? oldControl, TextInputControl? newControl) {}
+
+  void showToolbar() {}
+
+  void insertTextPlaceholder(Size size) {}
+
+  void removeTextPlaceholder() {}
+
+  void performSelector(String selectorName) {}
 
   @override
   void performPrivateCommand(String action, Map<String, dynamic> data) {
