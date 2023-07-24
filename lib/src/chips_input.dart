@@ -395,6 +395,7 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   void performPrivateCommand(String action, Map<String, dynamic> data) {
     //TODO
   }
+  void performSelector(String selectorName) {}
 
   @override
   void didUpdateWidget(covariant ChipsInput<T> oldWidget) {
